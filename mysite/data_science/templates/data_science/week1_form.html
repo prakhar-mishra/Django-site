@@ -1,0 +1,9 @@
+<h1>Hi please enter search query to perform twitter sentimental analysis</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'data_science:twitter_analysis' %}" method="post">
+{% csrf_token %}
+    <input type="text" name="query" value="query"><br>
+<input type="submit" value="Analyse">
+</form>

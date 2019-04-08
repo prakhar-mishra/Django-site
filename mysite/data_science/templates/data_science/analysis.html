@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Analysis: </h1>
+    {% if feed_analysis %}
+    <ul>
+    {% for tweet_data in feed_analysis %}
+        <li>
+            <div>Tweet : {{ tweet_data.tweet }}</div>
+            <div>Sentiment : {{ tweet_data.analysis }}</div>
+            <br>
+        </li>
+    {% endfor %}
+    </ul>
+    {% else %}
+        <p>unable to extract sentiment.</p>
+    {% endif %}
+</body>
+</html>
