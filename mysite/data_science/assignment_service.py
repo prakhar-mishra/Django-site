@@ -2,12 +2,11 @@ import textblob
 import tweepy
 
 def perform_twitter_analysis(query):
-    consumer_key = ""
-    consumer_Secret = ""
+    consumer_key = "nqwFVVxQZvfcmnF4UXq04RTo8"
+    consumer_Secret = "iBPpfOZEgONS9QeNbZd2ksHFVKr7THULRKz2JyFaOWpTWo0ae1"
 
-
-    access_token = ""
-    access_token_secret = ""
+    access_token = "1107700709896523776-DfjEK5ZrQg3QMsFdvGWeFkyutQp7Tr"
+    access_token_secret = "uIVdEAkvJNPyj5Vib1furUP7hAOvxYQ2DIXeEN7Q68dRl"
 
     auth = tweepy.OAuthHandler(consumer_key, consumer_Secret)
     auth.set_access_token(access_token, access_token_secret)

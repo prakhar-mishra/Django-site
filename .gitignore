@@ -1,4 +1,7 @@
-venv/*
+django_site/*
 *.log
 mysite/db.sqlite3
 *.idea
+*.pyc
+*cache
+*__pycache__/*
